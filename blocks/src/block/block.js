@@ -5,8 +5,8 @@ const { registerBlockType } = wp.blocks;
 import "./style.css";
 import "./editor.css";
 
-registerBlockType('test-123/main', {   
-    title: 'Test Block',
+registerBlockType('accordion-block/main', {   
+    title: 'Accordion Block',
     icon: 'menu',
     category: 'common',
 
