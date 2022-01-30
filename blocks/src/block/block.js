@@ -5,8 +5,8 @@ const { registerBlockType } = wp.blocks;
 import "./style.css";
 import "./editor.css";
 
-registerBlockType('accordion-block/main', {   
-    title: 'Accordion Block',
+registerBlockType('test-123/main', {   
+    title: 'Test Block',
     icon: 'menu',
     category: 'common',
 
@@ -19,7 +19,7 @@ registerBlockType('accordion-block/main', {
 
     },
 
-    edit( { attributes, setAttributes  } ) {
+    edit( { attributes, setAttributes, className  } ) {
 
         return (
             <PlainText
@@ -35,7 +35,7 @@ registerBlockType('accordion-block/main', {
     save( { attributes } ) {
 
         return (
-            <h2>{ attributes.title }</h2>
+            <h2 className="accordion__title">{ attributes.title }</h2>
         )
     }
 
